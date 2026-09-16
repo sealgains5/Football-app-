@@ -1,0 +1,50 @@
+:root {
+  --green: #111111;
+  --green-light: #1111141a;
+  --bg: #f4f4f5;
+  --bg2: #ffffff;
+  --border: #e4e4e7;
+  --text: #09090b;
+  --text2: #71717a;
+  --text3: #a1a1aa;
+  --red: oklch(0.55 0.18 25);
+  --amber: oklch(0.65 0.15 75);
+  --blue: oklch(0.52 0.15 240);
+  --shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --card-radius: 12px;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
